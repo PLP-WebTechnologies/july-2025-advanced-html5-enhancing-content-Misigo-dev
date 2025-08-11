@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cooking Recipe Website</title>
+</head>
+<body>
+
+<h1>My Recipes</h1>
+<p>Welcome to my cooking recipe website! Here you can find a variety of recipes to try at home.</p>
+<h2>Featured salad photo</h2>
+<img src="https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg" alt="Fresh salad ingredients arranged in a bowl on a wooden table, surrounded by colorful vegetables and kitchen utensils in a bright, welcoming kitchen setting, creating a cheerful and inviting atmosphere" style="width:300px;height:200px;">
+
+<!-- Table showing some recipes -->
+<table border="1">
+    <tr>
+        <th>Recipe Name</th>
+        <th>Main Ingredient</th>
+        <th>Cooking Time</th>
+    </tr>
+    <tr>
+        <td>Pancakes</td>
+        <td>Flour</td>
+        <td>15 mins</td>
+    </tr>
+    <tr>
+        <td>Chicken Curry</td>
+        <td>Chicken</td>
+        <td>40 mins</td>
+    </tr>
+</table>
+<h2>Pancake Tutorial Video</h2>
+<video width="320" height="240" controls>
+    <source src="https://videos.pexels.com/video-files/4725784/4725784-hd_1080_1920_25fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<h2>Cooking Audio</h2>
+<audio controls>
+    <source src="meat sizzling audio.wav" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+<hr>
+
+<h2>Submit Your Recipe</h2>
+
+<!-- Form for recipe submission -->
+<form>
+    <!-- Recipe Name -->
+    <label for="name">Recipe Name:</label>
+    <input type="text" id="name" name="name" required minlength="3"><br><br>
+
+    <!-- Main Ingredient -->
+    <label for="ingredient">Main Ingredient:</label>
+    <input type="text" id="ingredient" name="ingredient" required pattern="[A-Za-z\s]+"><br><br>
+
+    <!-- Cooking Time -->
+    <label for="time">Cooking Time (minutes):</label>
+    <input type="number" id="time" name="time" required><br><br>
+
+    <!-- Type of Meal -->
+    <label for="type">Type:</label>
+    <select id="type" name="type">
+        <option>Breakfast</option>
+        <option>Lunch</option>
+        <option>Dinner</option>
+        <option>Dessert</option>
+    </select><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit Recipe">
+</form>
+
+</body>
+</html>
